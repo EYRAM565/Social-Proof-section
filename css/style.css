@@ -1,1 +1,262 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color:  hsl(0, 0%, 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.usersloveourproduct h1 {
+    color: hsl(300, 43%, 22%);
+}
+
+.usersloveourproduct p {
+    color: hsl(303, 10%, 53%);
+}
+
+.fivestarreview .fivestar{
+    background-color:  hsl(300, 24%, 96%);
+}
+
+
+div span {
+    color: hsl(300, 43%, 22%);
+}
+
+.container .card {
+    background-color: hsl(300, 43%, 22%);
+}
+
+.container .card h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+.container .card h4 {
+    color: hsl(333, 80%, 67%);
+}
+
+.container .card p {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+@media screen and (max-width: 768px) {
+   section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .usersloveourproduct {
+        background-image: url('../images/bg-pattern-bottom-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size:  contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .usersloveourproduct h1{
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 30px;
+        padding-top: 30px;
+    }
+
+    .usersloveourproduct p {
+        font-size: .9rem;
+        font-weight: 400;
+        line-height: 25px;
+        padding: 30px 40px 0 40px ;
+    }
+
+    .fivestarreview {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        margin-top: 40px;
+    }
+
+    .fivestar{
+        margin-bottom: 12px;
+        padding: 10px 60px 10px 60px;
+    }
+
+
+    .fivestar .pics {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .fivestarreview .fivestar{
+        font-size: .9rem;
+        font-weight: 700;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        
+    }
+
+    .container .card {
+        border-radius: 12px;
+        margin-bottom: 14px;
+        max-width: 80%;
+        padding: 20px 15px 20px 15px;
+    }
+
+    .container .card .image {
+        display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       gap: 10px;
+
+    }
+
+    .container .card .image .name-status h2{
+       font-size: 1rem;
+    }
+
+    .container .card .image .name-status div h4{
+        font-size: .7rem;
+    }
+
+    .container .card .image img{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+    }
+
+    .content p{
+        font-size: .8rem;
+        font-weight: 400;
+        line-height: 25px;
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+     }
+     .usersloveourproduct {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        padding: 20px;
+
+     }
+
+     .usersloveourproduct h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 50px;
+        
+        padding: 15px;
+     }
+
+     .usersloveourproduct p {
+        font-size: 1rem;
+        font-weight: 500;
+        
+     }
+
+     .fivestarreview {
+        margin-left: auto;
+        padding-right: 20px;
+     }
+
+
+     .fivestar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+     }
+
+     .fivestar span {
+        margin-left: 15px;
+     }
+
+     .fivestar .pics{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+     } 
+
+
+
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-top: 100px;
+    }
+
+    .container .card {
+        border-radius: 15px;
+        padding: 20px 50px 20px 50px;
+    }
+
+     .container .card .image{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+       
+    }
+
+    .container .card .image img{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+
+    .container .card .image .name-status h2{
+        font-size: 1rem;
+        font-weight: 700;
+
+    } 
+
+    .container .card .image .name-status h4 {
+        font-size: .7rem;
+    }
+
+    .container .card .image .name-status{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .content p{
+        font-size: .9rem;
+        font-weight: 500;
+        line-height: 25px;
+        padding-top: 40px        
+    }
+}
