@@ -134,7 +134,7 @@ div span {
     .container .card {
         border-radius: 12px;
         margin-bottom: 14px;
-        width: 100%;
+        max-width: 350px;
         padding: 20px 15px 20px 15px;
     }
 
@@ -211,7 +211,7 @@ div span {
         margin-top: 20px;
         width: 65%;
         margin-left: 100px;
-        /* margin-right: 100px; */
+        
         
      }
 
@@ -234,11 +234,11 @@ div span {
      }
 
       .fivestar:nth-child(2){
-        transform: translate(20px);
+        transform: translate(60px);
      }
 
      .fivestar:last-child{
-        transform: translate(40px);
+        transform: translate(80px);
      } 
 
      .fivestar span {
@@ -270,16 +270,16 @@ div span {
     .container .card {
         border-radius: 15px;
         padding: 15px;
-        width: 100%;
+        max-width: 450px;
     }
 
 
     .card:nth-child(2){
-        transform: translate(30px, 10px);
+        transform: translate(30px, 30px);
     } 
 
      .card:last-child{
-        transform: translate(40px, 20px);
+        transform: translate(40px, 50px);
     }
 
      .container .card .image{
